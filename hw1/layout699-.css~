@@ -1,0 +1,38 @@
+/* layout699-.css - layout for smaller devices
+ *
+ * D Provine and Bob S.
+ */
+
+@media screen and (max-width: 699px) {
+    #top{
+	text-align: center;
+	padding: 5px;
+        width: 95%;
+        border: 3px solid white;
+        margin: 1px;
+	text-align: center;
+    }
+    #left{
+	width: 95%;
+        padding: 5px;
+	margin: 1px;
+	border: 3px solid white;
+	text-align: center;
+    }
+
+    #right{
+	margin: 1px;
+	border: 3px solid white;
+	width: 95%;
+	padding: 5px;
+        text-align: center;
+    }
+
+    #center{
+	padding: 5px;
+	margin: 1px;
+	border: 3px solid white;
+	width: 95%;
+	text-align: center;
+    }
+}

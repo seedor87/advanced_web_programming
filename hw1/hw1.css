@@ -1,0 +1,54 @@
+a:link {
+    color: #4B0082;
+}
+a:visited {
+    color: #ff0000;
+}
+a:hover {
+    color: #ffffff;
+}
+a:active {
+    color: #000000;
+}
+.resize{
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+body{
+    background-color:rgb(170, 244, 242);
+}
+.search{
+    margin: auto;
+    width: 60%;
+    max-width: 400px;
+    border: 3px solid #ff0000;
+    padding: 10px;
+}
+img.link{
+    border:0;
+    width:88px;
+    height:31px;
+    float:left;
+    padding:0px 5px;
+}
+.fullspan {
+      margin:10px;
+      padding:10px;
+}
+.fixed_bar {
+    background-color: rgb(66,134,244);
+    border: 2px solid gray;
+    position: fixed;
+    width: 100%;
+    bottom: 2px;
+    margin:3px;
+    padding:3px;
+    z-index: 1;
+}
+.spacer {
+    position: fixed;
+    bottom: 0px;
+    padding:100px;
+}
