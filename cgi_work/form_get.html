@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <!-- gotta have these two -->
+  <title>Sample Form</title>
+  <meta charset="utf-8" />
+
+  <!-- credit where it's due -->
+  <meta name="Author" content="Darren Provine" />
+
+  <!-- tell search engines to buzz off -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- style stuff -->
+  <link rel="stylesheet" href="webline.css" />
+  <link rel="shortcut icon" href="/~kilroy/Images/KilroyBrick.png" />
+
+  <!--  $Id: form_get.html,v 1.4 2013/02/14 13:43:53 kilroy Exp kilroy $  -->
+
+  <style type="text/css">
+  <!--
+  input:focus { background-color: #ccccff; }
+  -->
+  </style>
+</head>
+
+<body>
+
+<p>
+Here is a form.  Note use of a table to make it line up neatly:
+</p>
+
+<form action="./formout.cgi" method="get">
+<table title="Examples of input types">
+  <tr>
+    <td> <label for="firstname"> First Name </label>
+    </td>
+    <td> <input type="text"
+         id="firstname" name="firstname" title="First Name" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="password"> Sample Password Field </label>
+    </td>
+    <td> <input type="password"
+         id="password" name="password" title="Password" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="planet"> Planet of Origin </label>
+    </td>
+    <td> <select name="planet"
+          id="planet" size="1" title="Where are you from?">
+           <option value="1">Mercury</option>
+           <option value="2">Venus</option>
+           <option selected="selected" value="3">Earth</option>
+           <option value="4">Mars</option>
+         </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="state"> State </label>
+    </td>
+    <td>
+      <!-- NOTE NOTE NOTE: You can't put 'id="state"' over and over,
+           because each id must be unique! -->
+      <fieldset> <legend>State</legend>
+         <input type="radio" id="state"
+          value="New Jersey" title="state" name="state" />New Jersey<br />
+         <input type="radio"
+          value="Pennsylvania" title="state" name="state" />Pennsylvania<br />
+         <input type="radio"
+          value="Delaware" title="state" name="state" />Delaware<br />
+         <input type="radio"
+          value="confusion" title="state" name="state" />Confusion<br />
+      </fieldset>
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="favenum"> Favorite Number: </label>
+    </td>
+    <td> <input type="number" id="favenum"
+          name="favenum" title="Favorite Number" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="favenum2"> 2nd Favorite Number: </label>
+    </td>
+    <td> <input type="range" id="favenum2"
+          name="favenum2" title="2nd Number" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="favecolor"> Favorite Color: </label>
+    </td>
+    <td> <input type="color" id="favecolor"
+          name="favecolor" title="Favorite Color" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="birthday"> Birthday: </label>
+    </td>
+    <td> <input style="width: 12em;" id="birthday"
+                type="date" name="birthday" title="Birthday" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="spamme"> Check to get spam: </label>
+    </td>
+    <td> <input type="checkbox" id="spamme" name="spamme" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> Hidden Element Here &rarr;
+    </td>
+    <td> <input type="hidden" name="secret" value="1098374" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <input type="submit" />
+    </td>
+    <td> <input type="reset" />
+    </td>
+  </tr>
+
+  <tr>
+    <td> <input type="submit" value="Send this data" />
+    </td>
+    <td> <input type="reset" value="Clear this form" />
+    </td>
+  </tr>
+</table>
+</form>
+
+<p style="border: 4px dotted red; margin:10px; padding:5px; float:left;">
+<b>Note:</b> the input types
+<i>number</i>, <i>range</i>, <i>color</i>, and <i>date</i>
+are not supported equally by all browsers.
+</p>
+
+<table id="webline" title="validation and testing links">
+  <tr>
+    <td> <a href="http://elvis.rowan.edu/~kilroy/" 
+            title="Link to my home page">
+            D. Provine
+         </a>
+
+    </td>
+
+    <td style="word-spacing:1em;">Valid:
+     <a href="http://validator.w3.org/check/referer">HTML5</a>
+     <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+     CSS3
+     </a>
+    </td>
+
+    <td style="word-spacing:1em;">Tests:
+         <a href=".IEshot.png">IE</a>
+         <a href=".FFshot.png">Mozilla</a>
+         <a href=".WKshot.png">WebKit</a>
+         <a href=".OPshot.png">Opera</a>
+         <a href=".W3Mshot.png">W3M</a>
+         <a href=".LYNXshot.png">Lynx</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
